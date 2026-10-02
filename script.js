@@ -20,18 +20,6 @@ function openInvitation() {
     document.body.style.overflow = "auto";
 }
 
-const music = document.getElementById("music");
-const musicBtn = document.getElementById("musicBtn");
- 
-music.play()
-.then(() => {
-musicBtn.textContent = "❚❚";
-})
-.catch(err => {
-console.log("Autoplay ditolak browser:", err);
-});
-}
-
 // Kunci scroll saat cover tampil
 document.body.style.overflow = "hidden";
 
