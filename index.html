@@ -1,0 +1,152 @@
+<!doctype html><html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amel & Husni — Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@400;600&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="cover" class="cover">
+<div>
+<p>THE WEDDING OF</p>
+<h1>Amel <i>&</i> Husni</h1>
+<p id="guest">Kepada Yth. Tamu Undangan</p>
+<p>15 · 08 · 2026</p>
+<blockquote>“Karena setiap langkah baik,<br>akan selalu menemukan jalannya ...”</blockquote>
+<button onclick="openInvitation()">Buka Undangan</button>
+</div>
+</div>
+<header>
+<a href="#home">Amel & Husni</a>
+<nav>
+<a href="#story">Kisah</a>
+<a href="#event">Acara</a>
+<a href="#gallery">Galeri</a>
+<a href="#rsvp">RSVP</a>
+<a href="#location">Lokasi</a>
+</nav>
+</header>
+<main>
+<section id="home" class="hero">
+<img src="assets/hero-wedding.png">
+<div>
+<small>THE WEDDING OF</small>
+<h2>Amel <i>&</i> Husni</h2>
+<p class="lead">Dari Jalan yang Berbeda,<br><em>Menuju Tujuan yang Sama.</em></p>
+<p>Dengan memohon rahmat dan ridha Allah SWT., kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa.</p>
+</div>
+</section>
+<section id="story">
+<small>OUR JOURNEY</small>
+<h2>Kisah Kami</h2>
+<p>Dari perjalanan yang berbeda, menuju tujuan yang sama.</p>
+<img class="wide" src="assets/storyline.png">
+</section>
+<section id="event" class="paper">
+<div>
+<small>SAVE THE DATE</small>
+<h2>Acara Kami</h2>
+<p class="arabic">وَمِن كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ</p>
+<div class="details">
+<b>Minggu, 27 Desember 2026</b>
+<b>Akad · 08.00 WIB — selesai</b>
+<b>Walimah · 10.00 WIB — selesai</b>
+<b>Masjid Bluemosque · Bandung, Jawa Barat</b>
+</div>
+<p><a id="calendar" class="btn" target="_blank">＋ Google Calendar</a>
+ <a class="btn" href="#location">📍 Lokasi</a>
+</p>
+<div class="count">
+<span><b id="d">00</b>Hari</span>
+<span><b id="h">00</b>Jam</span>
+<span><b id="m">00</b>Menit</span>
+<span><b id="s">00</b>Detik</span>
+</div>
+</div>
+<img src="assets/mecca.png">
+</section>
+
+<section id="gallery">
+<small>OUR MEMORIES</small>
+<h2>Galeri Kami</h2>
+<div class="gallery">
+<img src="assets/mecca.png">
+<img src="assets/volunteer.png">
+<img src="assets/career.png">
+<img src="assets/couple-casual.png">
+<img src="assets/hero-wedding.png">
+</div>
+</section>
+
+<section id="rsvp" class="forms">
+<div class="card">
+<small>RSVP</small>
+<h2>Konfirmasi Kehadiran</h2>
+<form onsubmit="sendRSVP(event)">
+<input id="name" required placeholder="Nama lengkap">
+<select id="attendance" required>
+<option value="">Kehadiran</option>
+<option>Hadir</option>
+<option>Tidak dapat hadir</option>
+</select>
+<input id="guests" type="number" min="1" max="10" value="1">
+<textarea id="message" placeholder="Pesan (opsional)"></textarea>
+<button type="submit">Kirim Konfirmasi</button>
+</form>
+<p id="rsvpStatus"></p>
+</div>
+<div class="card">
+<small>WISHES</small>
+<h2>Ucapan & Doa</h2>
+<form onsubmit="sendWish(event)">
+<input id="wishName" required placeholder="Nama">
+<textarea id="wish" required rows="7" placeholder="Tulis ucapan dan doa..."></textarea>
+<button type="submit">Kirim Ucapan</button>
+</form>
+<p id="wishStatus"></p>
+</div>
+</section>
+
+<section id="messages">
+<small>GUEST BOOK</small>
+<h2>Ucapan Tamu</h2>
+<div id="messageList">
+<p>Ucapan akan tampil setelah Google Sheets dihubungkan.</p>
+</div>
+</section>
+
+<section id="location" class="paper location">
+<div>
+<small>VENUE</small>
+<h2>Alamat & Lokasi</h2>
+<p>
+ <b>Masjid Bluemosque</b>
+ <br>Bandung, Jawa Barat
+</p>
+<a class="btn" target="_blank" href="https://maps.app.goo.gl/b9bLHxS8cpLfRDq3A">Buka Google Maps ↗</a>
+</div>
+<img src="assets/mecca.png">
+</section>
+
+<section class="closing">
+<small>TERIMA KASIH</small>
+<h2>Dengan penuh syukur,<br>kami menantikan kehadiran Anda.</h2>
+<p>Semoga Allah memudahkan langkah kami menuju keluarga yang sakinah, mawaddah, warahmah.</p>
+<h3>Amel & Husni</h3>
+</section>
+
+</main>
+
+<footer>Amel & Husni · 15 Agustus 2026</footer>
+<button id="musicBtn" class="music" onclick="toggleMusic()">♫</button>
+<audio id="music" loop>
+<source src="assets/music2.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
