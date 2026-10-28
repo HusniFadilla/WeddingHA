@@ -1,13 +1,13 @@
 :root {
-	--pink: #f14e95;
-	--pink-muted: #fdf4f8;
-	--pink-light: #fcdbe9;
-	--pink-hover: #d84686;
+	--pink: #7A1F32;
+	--pink-muted: #FAF4F5;
+	--pink-light: #F2E6E8;
+	--pink-hover: #651A2A;
 	--white: #ffffff;
-	--grey: #cccccc;
-	--light-grey: #d4d4d4;
-	--very-light-grey: #eeeeee;
-	--dark-grey: #999999;
+	--grey: #B8B8B8;
+	--light-grey: #E5E5E5;
+	--very-light-grey: #F7F7F7;
+	--dark-grey: #6B7280;
 	--dark: #151515;
 	--black: #000000;
 }
