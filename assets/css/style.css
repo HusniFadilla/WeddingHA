@@ -1,17 +1,17 @@
 :root {
---pink: #7C9A6D;          /* Primary Green */
---pink-muted: #F3F6F0;    /* Green Muted */
---pink-light: #DDE8D7;    /* Green Light */
---pink-hover: #668154;    /* Green Hover */
+--pink: #3D6FB6;           /* Mosque Blue */
+--pink-muted: #F4F8FC;     /* Very Light Blue */
+--pink-light: #DCE8F5;     /* Soft Blue */
+--pink-hover: #2F5C99;     /* Dark Blue */
 
---white: #FAF0E6;         /* Cream */
+--white: #FAF8F3;          /* Warm White / Cream */
 
---grey: #B7B7B0;
---light-grey: #E8E6DF;
---very-light-grey: #FDFBF7;
+--grey: #B8B8B8;
+--light-grey: #E8E8E8;
+--very-light-grey: #F9FAFB;
 
---dark-grey: #5F6368;
---dark: #2D2D2D;
+--dark-grey: #5F6773;
+--dark: #1F2937;
 --black: #000000;
 }
 
